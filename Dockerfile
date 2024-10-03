@@ -1,5 +1,5 @@
 # Use the official Python image
-FROM python:3.9-slim
+FROM 950196620421.dkr.ecr.us-east-1.amazonaws.com/python:latest
 
 # Set the working directory
 WORKDIR /app

@@ -1,13 +1,12 @@
 #!/bin/bash
 
 # Change to the app directory
-cd /home/ec2-user/my-flask-app || exit
 
 # Authenticate Docker to ECR
 aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 950196620421.dkr.ecr.us-east-1.amazonaws.com/python:latest
 
 # Pull the Docker image
-sudo docker pull 950196620421.dkr.ecr.us-east-1.amazonaws.com/python:latest:latest
+sudo docker pull 950196620421.dkr.ecr.us-east-1.amazonaws.com/python:latest
 
 # Stop and remove any existing container
 if [ "$(sudo docker ps -q -f name=my-flask-app)" ]; then

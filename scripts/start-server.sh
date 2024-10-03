@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables
-ECR_IMAGE="950196620421.dkr.ecr.us-east-1.amazonaws.com/python:latest"
+ECR_IMAGE="950196620421.dkr.ecr.us-east-1.amazonaws.com/webapp"
 CONTAINER_NAME="my-flask-app"
 
 # Authenticate Docker to ECR

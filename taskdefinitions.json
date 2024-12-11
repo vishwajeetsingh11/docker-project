@@ -1,5 +1,5 @@
 {
-  "family": "my-application",
+  "family": "WebappTD",
   "containerDefinitions": [
     {
       "name": "web",
@@ -10,7 +10,7 @@
       "portMappings": [
         {
           "containerPort": 5000,
-          "hostPort": 500
+          "hostPort": 5000
         }
       ],
       "environment": [
